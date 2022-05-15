@@ -15,19 +15,18 @@ body {
 }
 
 .wrapper {
-    max-width: 1200px;
-    height: 100vh;
     margin: 0 auto;
+    padding: 3vh 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .slider {
     border: 5px solid #d6d6d6;
     border-radius: 40px;
-    max-width: 75%;
-    max-height: 85%;
+    max-width: 53rem;
+    max-height: 65rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
