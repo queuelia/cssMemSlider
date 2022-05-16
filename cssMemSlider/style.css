@@ -74,8 +74,14 @@ input {
     border-radius: 50px 50px;
     min-width: 15rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+.navigation__bar {
+    min-width: 20%;
+    display: flex;
+    justify-content: center;
 }
 
 .bottom-panel__description {
@@ -104,24 +110,87 @@ input {
     margin-right: 30%;
 }
 
-.navigation-bar {
-    background-color: #000000;
+.navigation__bar {
+    background-color: #ffffff;
     opacity: .7;
     height: 2.5rem;
     width: 2.5rem;
-    margin-right: .5rem;
-    border: 7px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
+    background-color: #000000;
+    opacity: .7;
+    border: 3px solid #000000;
+}
+
+.navigation__bar:hover {
+    cursor: pointer;
+}
+
+.navigation__bar:first-child {
+    border-radius: 50% 0 0 50%;
+}
+
+.navigation__bar:last-child {
+    border-radius: 0 50% 50% 0;
+}
+
+.navigation__bar:hover > .bar {
+    opacity: 1;
+    background-color: #000000;
+    cursor: pointer;
+    border: 3px solid #000000;
+}
+
+#radio_nav-1:checked ~ .slider__bottom-panel > .bottom-panel__navigation > .navigation__bar > .bar-1 {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    opacity: 1;
     transition: all .4s ease;
 }
 
-.navigation-bar:last-child {
-    margin-right: 0;
+#radio_nav-2:checked ~ .slider__bottom-panel > .bottom-panel__navigation > .navigation__bar > .bar-2 {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    opacity: 1;
+    transition: all .4s ease;
 }
 
-.navigation-bar:hover {
+#radio_nav-3:checked ~ .slider__bottom-panel > .bottom-panel__navigation > .navigation__bar > .bar-3 {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ffffff;
+    border: 3px solid #000000;
     opacity: 1;
-    cursor: pointer;
+    transition: all .4s ease;
+}
+
+#radio_nav-4:checked ~ .slider__bottom-panel > .bottom-panel__navigation > .navigation__bar > .bar-4 {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    opacity: 1;
+    transition: all .4s ease;
+}
+
+#radio_nav-5:checked ~ .slider__bottom-panel > .bottom-panel__navigation > .navigation__bar > .bar-5 {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    opacity: 1;
+    transition: all .4s ease;
 }
 
 #radio_nav-1:checked ~ .slides {
